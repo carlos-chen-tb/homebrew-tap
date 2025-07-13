@@ -1,10 +1,14 @@
 # Carlos-chen-tb Tap
 
+Shipped with Homebrew:
+
+1. [awsconnect](https://github.com/carlos-chen-tb/awsconnect)
+
 ## How do I install these formulae?
 
 `brew install carlos-chen-tb/tap/<formula>`
 
-Or `brew tap carlos-chen-tb/tap` and then `brew install <formula>`.
+Or `brew tap carlos-chen-tb/tap` and then `brew install awsconnect`
 
 Or, in a `brew bundle` `Brewfile`:
 
@@ -12,7 +16,3 @@ Or, in a `brew bundle` `Brewfile`:
 tap "carlos-chen-tb/tap"
 brew "<formula>"
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
