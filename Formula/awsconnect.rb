@@ -1,4 +1,4 @@
-class CargoLambda < Formula
+class Awsconnect < Formula
   desc "TOTP tool for AWS MFA authentication"
   homepage "https://github.com/carlos-chen-tb/awsconnect"
   head "https://github.com/carlos-chen-tb/awsconnect.git", branch: "main"
