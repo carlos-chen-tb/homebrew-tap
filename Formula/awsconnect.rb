@@ -7,7 +7,7 @@ class Awsconnect < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.0.3/awsconnect-linux-aarch64"
+      url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.0.3/awsconnect-macos-aarch64"
       sha256 "ce1b76fa4cc9466c46b764a049233fd4d175dbe58d797efeb9687484249e4ef9"
     else
       url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.0.3/awsconnect-macos-x86_64"
