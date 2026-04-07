@@ -1,9 +1,9 @@
 class Awsconnect < Formula
   desc "TOTP tool for AWS MFA authentication"
   homepage "https://github.com/carlos-chen-tb/awsconnect"
-  head "https://github.com/carlos-chen-tb/awsconnect.git", branch: "main"
   version "0.1.0"
   license "MIT"
+  head "https://github.com/carlos-chen-tb/awsconnect.git", branch: "main"
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -13,14 +13,12 @@ class Awsconnect < Formula
       url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.1.0/awsconnect-macos-x86_64"
       sha256 "56e8a3c2d8b13a3dec82624eb222b04c56ac5b2e7c131be9b0781ba9c0a5abd2"
     end
+  elsif Hardware::CPU.arm?
+    url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.1.0/awsconnect-linux-aarch64"
+    sha256 "b08c6102e1dd0b78e7a38cb55edeab8f9f0b201d000a06a1a492566c4562843c"
   else
-    if Hardware::CPU.arm?
-      url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.1.0/awsconnect-linux-aarch64"
-      sha256 "b08c6102e1dd0b78e7a38cb55edeab8f9f0b201d000a06a1a492566c4562843c"
-    else
-      url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.1.0/awsconnect-linux-x86_64"
-      sha256 "2a9996f9aeada83e0d4eaff59fde90d9bbc8d9d5e09b78fe206a04bfe493eda9"
-    end
+    url "https://github.com/carlos-chen-tb/awsconnect/releases/download/v0.1.0/awsconnect-linux-x86_64"
+    sha256 "2a9996f9aeada83e0d4eaff59fde90d9bbc8d9d5e09b78fe206a04bfe493eda9"
   end
 
   def install
