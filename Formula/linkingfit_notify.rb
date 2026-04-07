@@ -1,7 +1,6 @@
 class LinkingfitNotify < Formula
-  desc "LinkingFit badminton court availability notifier with Slack/Discord/Telegram notifications"
+  desc "LinkingFit badminton court notifier with multi-platform alerts"
   homepage "https://github.com/carlos-chen-tb/linkingfit_notify"
-  version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.0/linkingfit_notify-aarch64-apple-darwin.tar.gz"
