@@ -1,24 +1,25 @@
 class LinkingfitNotify < Formula
-  desc "LinkingFit badminton court notifier with multi-platform alerts"
+  desc "LinkingFit badminton court availability notifier with Slack/Discord/Telegram notifications"
   homepage "https://github.com/carlos-chen-tb/linkingfit_notify"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.0/linkingfit_notify-aarch64-apple-darwin.tar.gz"
-      sha256 "59c33c534df2998feba615f4c4c6537fa04f99add50064f8d9cd815d53acf185"
+      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.1/linkingfit_notify-aarch64-apple-darwin.tar.gz"
+      sha256 "bde5d6c60806f988969da57f8b87b8cb3d9560ada530a82883bf445d9c5e4860"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.0/linkingfit_notify-x86_64-apple-darwin.tar.gz"
-      sha256 "3e2a8b68f416cd7e4129ab99ebe58e4cc123143b16d0aa3617b77f7edeed00ee"
+      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.1/linkingfit_notify-x86_64-apple-darwin.tar.gz"
+      sha256 "5e64d400eacab07ce6e71b7e5bff5033bf8b00353bc43ede85834c8de256a298"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.0/linkingfit_notify-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9131e3ea59354567a223e05b7a630cb14c216c2f62885062aaa98d5d89df84bc"
+      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.1/linkingfit_notify-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "667710cecb63342e832be2d640b03c83bcc827ad0f086ff00095854f478c5af8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.0/linkingfit_notify-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b17347625fe41b0d1225242c0b2846d6811167b37c847e4e73e1c654c1970e3a"
+      url "https://github.com/carlos-chen-tb/linkingfit_notify/releases/download/v0.1.1/linkingfit_notify-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "2073c3b0bfb505feef8b96b2fde9bd7b2b137f0f6f164b46f28eab16f597fc80"
     end
   end
   license "MIT"
